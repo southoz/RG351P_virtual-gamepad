@@ -533,8 +533,8 @@ namespace {
 				case BTN_TL: ev.code = BTN_TL; break;
 				case BTN_TR: ev.code = BTN_TR; break;
 				// analog stick buttons
-				case BTN_TL2: ev.code = BTN_THUMBL; break;
-				case BTN_TR2: ev.code = BTN_THUMBR; break;
+				case BTN_TRIGGER_HAPPY5: ev.code = BTN_THUMBL; break;
+				case BTN_TRIGGER_HAPPY6: ev.code = BTN_THUMBR; break;
 				// dpad
 				case BTN_DPAD_UP: { ev.type = EV_ABS; ev.code = ABS_HAT0Y; ev.value = 1;} break; // Up
 				case BTN_DPAD_DOWN: { ev.type = EV_ABS; ev.code = ABS_HAT0Y; ev.value = -1;} break; // Down
