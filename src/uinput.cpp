@@ -25,7 +25,6 @@
 #include <unistd.h>
 #include <stdexcept>
 #include <string.h>
-#include <cmath>
 #include <sys/epoll.h>
 
 /*
@@ -551,11 +550,11 @@ namespace {
 			case EV_ABS: {
 				switch(ev.code) {
 				// left stick
-				case ABS_X: { ev.code = ABS_X; ev.value = (round(ev.value*18.204)) * -1;} break;
-				case ABS_Y: { ev.code = ABS_Y; ev.value = (round(ev.value*18.204)) * -1;} break;
+				case ABS_X: { ev.code = ABS_X; ev.value = (ev.value*18) * -1;} break;
+				case ABS_Y: { ev.code = ABS_Y; ev.value = (ev.value*18) * -1;} break;
 				// right stick
-				case ABS_RX: { ev.code = ABS_RX; ev.value = (round(ev.value*18.204));} break;
-				case ABS_RY: { ev.code = ABS_RY; ev.value = (round(ev.value*18.204));} break;
+				case ABS_RX: { ev.code = ABS_RX; ev.value = (ev.value*18);} break;
+				case ABS_RY: { ev.code = ABS_RY; ev.value = (ev.value*18);} break;
 				// do not report any other axis
 				default:
 					return false;
