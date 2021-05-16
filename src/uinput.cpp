@@ -100,6 +100,15 @@ Supported events:
 0x0002(2035,0,4095,15,255,0) 0x0003(2006,0,4095,15,255,0) 0x0004(2055,0,4095,15,255,0) 0x0005(2000,0,4095,15,255,0) 0x0006(2183,0,4095,15,255,0) 0x0010(0,-1,1,0,0,0) 0x0011(0,-1,1,0,0,0) 
 	Event type 4
 0x0004 
+
+Device [GO-Super Gamepad] on '/dev/input/event5' version: 1.0.1
+Device id info: Bus 0x0019, Vendor 0x484b, Product 0x1100, Version 0x0100
+Supported events:
+        Event type 0
+        Event type 1
+0x0130 0x0131 0x0133 0x0134 0x0136 0x0137 0x0138 0x0139 0x0220 0x0221 0x0222 0x0223 0x02c0 0x02c1 0x02c2 0x02c3 0x02c4 0x02c5
+        Event type 3
+0x0000(0,-1800,1800,32,32,0) 0x0001(0,-1800,1800,32,32,0) 0x0003(0,-1800,1800,32,32,0) 0x0004(0,-1800,1800,32,32,0)
 */
 
 namespace {
