@@ -536,10 +536,10 @@ namespace {
 				case BTN_TL2: ev.code = BTN_THUMBL; break;
 				case BTN_TR2: ev.code = BTN_THUMBR; break;
 				// dpad
-				case BTN_DPAD_UP: { ev.type = EV_ABS; ev.code = ABS_HAT0Y; ev.value = 1} break; // Up
-				case BTN_DPAD_DOWN: { ev.type = EV_ABS; ev.code = ABS_HAT0Y; ev.value = -1} break; // Down
-				case BTN_DPAD_LEFT: { ev.type = EV_ABS; ev.code = ABS_HAT0X; ev.value = 1} break; // Left
-				case BTN_DPAD_RIGHT: { ev.type = EV_ABS; ev.code = ABS_HAT0X; ev.value = -1} break; // Right
+				case BTN_DPAD_UP: { ev.type = EV_ABS; ev.code = ABS_HAT0Y; ev.value = 1;} break; // Up
+				case BTN_DPAD_DOWN: { ev.type = EV_ABS; ev.code = ABS_HAT0Y; ev.value = -1;} break; // Down
+				case BTN_DPAD_LEFT: { ev.type = EV_ABS; ev.code = ABS_HAT0X; ev.value = 1;} break; // Left
+				case BTN_DPAD_RIGHT: { ev.type = EV_ABS; ev.code = ABS_HAT0X; ev.value = -1;} break; // Right
 				// do not report any other button
 				case BTN_TL2: { ev.type = EV_ABS; ev.code = ABS_Z; ev.value = ev.value*255;}  break;
 				case BTN_TR2: { ev.type = EV_ABS; ev.code = ABS_RZ; ev.value = ev.value*255;}  break;
