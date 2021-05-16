@@ -25,7 +25,7 @@
 #include <unistd.h>
 #include <stdexcept>
 #include <string.h>
-#include <cmath.h>
+#include <cmath>
 #include <sys/epoll.h>
 
 /*
